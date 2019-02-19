@@ -1,0 +1,30 @@
+{
+  "name": "indecision-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Aleksandar Sadzak",
+  "license": "MIT",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^2.1.0",
+    "node-sass": "^4.11.0",
+    "normalize.css": "^8.0.1",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-modal": "^3.8.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "validator": "^10.11.0",
+    "webpack": "^4.29.4",
+    "webpack-cli": "^3.2.3"
+  },
+  "scripts": {
+    "play": "babel src/playground/Counter-app.js --out-file=public/scripts/app.js --presets=env,react --watch",
+    "build": "webpack --watch"
+  }
+}

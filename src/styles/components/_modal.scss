@@ -1,0 +1,40 @@
+// Open/Close transition
+.ReactModalPortal > div {
+  opacity: 0;
+}
+.ReactModalPortal .ReactModal__Overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 200ms ease-in-out;
+}
+.ReactModalPortal .ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+  // <Modal closeTimeoutMS={200} className="modal">
+.ReactModalPortal .ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.modal {
+  background: $light-blue;
+  border-radius: 3rem;
+  color: #fff;
+  max-width: 30rem;
+  outline: none;
+  padding: $l-size;
+  text-align: center;
+}
+.modal button {
+  border-radius: 1rem;
+}
+.modal__title {
+  font-size: $m-size;
+  font-weight: 300;
+  margin: 0 0 $m-size 0;
+}
+.modal__body {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 $m-size 0;
+}
